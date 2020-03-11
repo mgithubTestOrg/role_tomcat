@@ -1,7 +1,7 @@
-Ansible Role: JDK
+Ansible Role: Tomcat
 =========
 
-本 Role 用于在 CentOS Ubuntu AmazonLinx 安装 JDK。
+本 Role 用于在 CentOS Ubuntu AmazonLinx 安装 Tomcat。
 ## Requirements
 
 运行本 Role，请确认符合如下的必要条件：
@@ -16,12 +16,13 @@ Ansible Role: JDK
 
 ## Related roles
 
-本 Role 在语法不依赖其他 role 的变量，但程序运行时需要确保已经运行：common Role， 局里说明：：
+本 Role 在语法依赖role_jdk，但程序运行时需要确保已经运行：common Role，和jdk role 局里说明：：
 
 ```
 roles:
     - {role: role_common, tags: "role_common"}
     - {role: role_jdk, tags: "role_jdk"}
+    - {role: role_tomcat, tags: "role_tomcat"}
 ```
 
 ## Variables
@@ -41,6 +42,7 @@ roles:
   role:
     - {role: role_common, tags: "role_common"}
     - {role: role_jdk, tags: "role_jdk"}
+    - {role: role_tomcat, tags: "role_tomcat"}
 ```
 
 ## FAQ
