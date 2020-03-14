@@ -28,8 +28,6 @@
     dest: /lib/systemd/system/tomcat.service
   when: ansible_os_family == 'Debian'
 
-- name: copy tomcat Configuration
-  copy: src=server.xml dest=/usr/local/tomcat/conf
 
 - name: Start Tomcat
   service:
