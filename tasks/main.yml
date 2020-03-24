@@ -29,6 +29,16 @@
   when: ansible_os_family == 'Debian'
 
 
+- name: Config tomcat
+  copy:
+    src: server.xml
+    dest: /usr/local/tomcat/conf/server.xml
+
+- name: Create dir
+  file:
+    path: /data/wwwroot/
+    state: directory
+
 - name: Start Tomcat
   service:
     name: tomcat
