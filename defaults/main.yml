@@ -2,7 +2,7 @@
 # This version number need maintenance usually
 tomcat_version: "9" 
 tomcat_release: "{{tomcat_metadata[tomcat_version]}}"
-tomcat_url: https://downloads.apache.org/tomcat/tomcat-{{tomcat_release[0]}}/v{{tomcat_release}}/bin/apache-tomcat-{{tomcat_release}}.zip
+tomcat_url: https://downloads.apache.org/tomcat/tomcat-{{tomcat_version}}/v{{tomcat_release}}/bin/apache-tomcat-{{tomcat_release}}.zip
 
 #tomcat version manage by tomcat update
 tomcat_metadata: 
