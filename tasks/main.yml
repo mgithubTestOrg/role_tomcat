@@ -5,7 +5,7 @@
     remote_src: yes
 
 - name: Rename Dir
-  shell: rm -rf tomcat* ; mv apache-tomcat-{{tomcat_version}} tomcat
+  shell: rm -rf tomcat* ; mv apache-tomcat-{{tomcat_release}} tomcat
   args:
     chdir: /usr/local/
     warn: false
