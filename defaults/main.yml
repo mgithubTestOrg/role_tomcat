@@ -1,4 +1,5 @@
 # 7.0.100/8.xx.xx/9.xx.xx 具体版本号https://tomcat.apache.org/查看
 # This version number need maintenance usually
-tomcat_version: "9.0.37" 
-tomcat_url: https://downloads.apache.org/tomcat/tomcat-{{tomcat_version[0]}}/v{{tomcat_version}}/bin/apache-tomcat-{{tomcat_version}}.zip
+tomcat_version: "9" 
+tomcat_release: "9.0.37"
+tomcat_url: https://downloads.apache.org/tomcat/tomcat-{{tomcat_release[0]}}/v{{tomcat_release}}/bin/apache-tomcat-{{tomcat_release}}.zip
