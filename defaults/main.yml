@@ -7,7 +7,7 @@ tomcat_url: https://downloads.apache.org/tomcat/tomcat-{{tomcat_version}}/v{{tom
 #tomcat version manage by tomcat update
 tomcat_metadata: 
   "7":
-    release: "7.0.100"
+    release: "7.0.105"
   "8":
     release: "8.5.51"
   "9":
